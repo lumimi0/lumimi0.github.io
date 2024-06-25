@@ -1,0 +1,203 @@
+body {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgb(250, 250, 250);
+}
+
+.content {
+    margin-left: 5%;
+    margin-right: 5%;
+    flex: 1;
+}
+
+.header {
+    text-align: center;
+    color: rgb(210, 210, 210);
+    background-color: rgb(30, 30, 30);
+    padding-bottom: 25px;
+    padding-top: 1px;
+}
+
+.header a {
+    text-decoration: none;
+    color: rgb(210, 210, 210);
+    padding-right: 20px;
+}
+
+.header a:hover {
+    color: #FFC83D;
+}
+
+.header .active {
+    color: #FFC83D;
+}
+
+.footer {
+    text-align: center;
+    color: white;
+    background-color: rgb(30, 30, 30);
+    padding: 5px;
+    width: 100%;
+    bottom: 0;
+    margin-top: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid lightgray;
+    padding: 14px;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(231, 231, 231);
+}
+
+th {
+    background-color: #22d291;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    border-radius: 8px;
+    padding: 10px;
+    padding-left: 12px;
+    padding-right: 12px;    
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.send {
+    background-color: #04AA6D;
+    margin-right: 7px;
+}
+
+.clear {
+    background-color: rgb(220, 30, 30);
+}
+
+input[type=text], input[type=email], input[type=tel] {
+    padding: 12px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 6px;
+    border: 2px solid rgb(154, 153, 153);
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus {
+    border: 2px solid rgb(30, 30, 30);
+}
+
+textarea {
+    width: 100%;
+    border: 2px solid rgb(154, 153, 153);
+    border-radius: 6px;
+    padding: 12px;
+    box-sizing: border-box;
+    resize: none;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    margin-bottom: 10px;
+}
+
+textarea:focus {
+    border: 2px solid rgb(30, 30, 30);
+}
+
+select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid rgb(154, 153, 153);
+    border-radius: 6px;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+fieldset {
+    padding: 20px;
+    border: 2px solid gray;
+    border-radius: 8px;;
+}
+
+label {
+    font-size: 18px;
+}
+
+.anrede {
+    margin-top: 14px;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+table a {
+    text-decoration: none;
+    color: blue;
+}
+
+table a:hover {
+    text-decoration: underline;
+}
+
+table a:visited {
+    text-decoration: none;
+    text-decoration: blue;
+}
+
+.item1 {
+    grid-area: home;
+}
+
+.item2 {
+    grid-area: about;
+}
+
+.item3 {
+    grid-area: schule;
+}
+
+.item4 {
+    grid-area: journal;
+}
+
+.item5 {
+    grid-area: kontakt;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 16% 17% 17% 17% 17% 16%;
+    grid-template-rows: 400px 400px;
+    grid-template-areas: 
+        'home home about about schule schule'
+        'journal journal journal kontakt kontakt kontakt';
+}
+
+.grid-container > div {
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.grid-container a {
+    color: black;
+    font-weight: bold;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontaktformular</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Webseite👍</h1>
+            <nav>
+                <a href="index.html">Startseite</a>
+                <a href="about.html">Über mich</a>
+                <a href="schule.html">Meine Schullaufbahn</a>
+                <a href="https://sites.google.com/d/1VgkPD8ol_k9_ddefPEyQ02W12uD3y1xn/p/1O9VuXod74c1Guu0R8Swn8q0BqVOLL-5s/edit">Lernjournal</a>
+                <!-- <a href="2048.html">2048</a> -->
+                <a class="active" href="kontakt.html">Kontakt</a>
+            </nav>
+        </header>
+
+        <div class="content">
+            <form action="danke.html" form="post">
+                <fieldset>
+                    <legend><h2>Kontaktformular 😱</h2></legend>
+                    <label for="anrede" class="titel">Anrede*</label>
+                    <div class="anrede">
+                        <input type="radio" id="frau" name="anrede" value="Frau" required>
+                        <label for="frau">Frau</label>
+                        <input type="radio" id="herr" name="anrede" value="Herr" required>
+                        <label for="herr">Herr</label>
+                        <input type="radio" id="anderes" name="anrede" value="Anderes" required>
+                        <label for="anderes">Anderes</label>
+                    </div>
+
+                    <label for="vorname"><p>Vorname*</p></label>
+                    <input type="text" id="vorname" placeholder="Max" pattern="[A-Za-zÄÖÜäöü]+" required>
+                    
+                    <label for="nachname"><p>Nachname*</p></label>
+                    <input type="text" id="nachname" placeholder="Mustermann" pattern="[A-Za-zÄÖÜäöü]+" required>        
+                   
+                    <label for="email"><p>E-Mail*</p></label>
+                    <!-- Pattern von Stack Overflow-->
+                    <input type="email" id="email" placeholder="max.mustermann@email.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                           
+                    <label for="tel"><p>Tel.</p></label>
+                    <!-- Pattern con ChatGPT -->
+                    <input type="tel" id="tel" placeholder="079 123 45 67" pattern="^(?:\+41|0041|0)(\d{9}|\s?\d{2}\s?\d{3}\s?\d{2}\s?\d{2})$">
+                        
+                    <label for="anliegen"><p>Was ist ihr Anliegen?</p></label>
+                    <select name="anliegen" id="anliegen">
+                        <optgroup>
+                            <option value="Problemmeldung">Problemmeldung</option>
+                            <option value="Feedback">Feedback</option>
+                            <option value="Sonstiges">Sonstiges</option>
+                        </optgroup>
+                    </select>
+                    
+                    <label for="nachricht"><p>Nachricht*</p></label>
+                    <textarea id="nachricht" rows="4" placeholder="Ihre Nachricht..."></textarea>
+                    
+                    <div>
+                        <button class="send" type="submit">Senden</button>
+                        <button class="clear" type="reset">Löschen</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+
+        <footer class="footer">
+            <p>&copy; 2024 Modul 293</p>
+        </footer>
+    </div>
+</body>
+</html>
